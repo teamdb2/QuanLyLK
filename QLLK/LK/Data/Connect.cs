@@ -12,7 +12,7 @@ namespace LK.Data
     class Connect : DataTable
     {
         private static DB2Connection db2Conn;
-        private static string connString = "Database=LK;Server=127.0.0.1:50000;UserID=db2admin;Password=123456";
+        private static string connString = "Database=QLLK1;Server=127.0.0.1:50000;UserID=db2admin;Password=123456";
         private DB2Command db2Cmd;
         private DB2DataAdapter db2DataAdapter;
 

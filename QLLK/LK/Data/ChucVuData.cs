@@ -15,26 +15,26 @@ namespace LK.Data
 
         public DataTable DanhSach()
         {
-            DB2Command cmd = new DB2Command("SELECT * FROM LK.CHUCVU");
+            DB2Command cmd = new DB2Command("SELECT * FROM QLLK.CHUCVU");
             data.Load(cmd);
             return data;
         }
 
         public void Them(ChucVuInfo cv)
         {
-            DB2Command cmd = new DB2Command("INSERT INTO LK.CHUCVU(MACV, TENCV) VALUES('" + cv.MaCV + "', '" + cv.TenCV + "')");
+            DB2Command cmd = new DB2Command("INSERT INTO QLLK1.CHUCVU(MACV, TENCV) VALUES('" + cv.MaCV + "', '" + cv.TenCV + "')");
             data.Load(cmd);
         }
 
         public void Sua(ChucVuInfo cv, string maCV)
         {
-            DB2Command cmd = new DB2Command("UPDATE LK.CHUCVU SET MACV = '" + cv.MaCV + "', TENCV = '" + cv.TenCV + "' WHERE MACV = '" + maCV + "'");
+            DB2Command cmd = new DB2Command("UPDATE QLLK1.CHUCVU SET MACV = '" + cv.MaCV + "', TENCV = '" + cv.TenCV + "' WHERE MACV = '" + maCV + "'");
             data.Load(cmd);
         }
 
         public void Xoa(string maCV)
         {
-            DB2Command cmd = new DB2Command("DELETE FROM LK.CHUCVU WHERE MACV = '" + maCV + "'");
+            DB2Command cmd = new DB2Command("DELETE FROM QLLK1.CHUCVU WHERE MACV = '" + maCV + "'");
             data.Load(cmd);
         }
     }

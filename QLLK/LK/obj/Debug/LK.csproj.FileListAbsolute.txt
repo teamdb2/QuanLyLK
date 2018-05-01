@@ -11,28 +11,7 @@ F:\DB2_BaoCao\QLLK\LK\obj\Debug\LK.csproj.CoreCompileInputs.cache
 F:\DB2_BaoCao\QLLK\LK\obj\Debug\LK.csproj.CopyComplete
 F:\DB2_BaoCao\QLLK\LK\obj\Debug\LK.exe
 F:\DB2_BaoCao\QLLK\LK\obj\Debug\LK.pdb
-C:\Users\Hien Tran\Documents\QuanLyLinhKienDB2_team\QLLK\LK\bin\Debug\LK.exe.config
-C:\Users\Hien Tran\Documents\QuanLyLinhKienDB2_team\QLLK\LK\bin\Debug\LK.exe
-C:\Users\Hien Tran\Documents\QuanLyLinhKienDB2_team\QLLK\LK\bin\Debug\LK.pdb
-C:\Users\Hien Tran\Documents\QuanLyLinhKienDB2_team\QLLK\LK\bin\Debug\IBM.Data.DB2.dll
-C:\Users\Hien Tran\Documents\QuanLyLinhKienDB2_team\QLLK\LK\obj\Debug\LK.csprojResolveAssemblyReference.cache
-C:\Users\Hien Tran\Documents\QuanLyLinhKienDB2_team\QLLK\LK\obj\Debug\LK.frmChucVu.resources
-C:\Users\Hien Tran\Documents\QuanLyLinhKienDB2_team\QLLK\LK\obj\Debug\LK.frmLinhKien.resources
-C:\Users\Hien Tran\Documents\QuanLyLinhKienDB2_team\QLLK\LK\obj\Debug\LK.Properties.Resources.resources
-C:\Users\Hien Tran\Documents\QuanLyLinhKienDB2_team\QLLK\LK\obj\Debug\LK.csproj.GenerateResource.Cache
-C:\Users\Hien Tran\Documents\QuanLyLinhKienDB2_team\QLLK\LK\obj\Debug\LK.csproj.CoreCompileInputs.cache
-C:\Users\Hien Tran\Documents\QuanLyLinhKienDB2_team\QLLK\LK\obj\Debug\LK.exe
-C:\Users\Hien Tran\Documents\QuanLyLinhKienDB2_team\QLLK\LK\obj\Debug\LK.pdb
-E:\QuanLyLinhKienDB2_team\QLLK\LK\bin\Debug\LK.exe.config
-E:\QuanLyLinhKienDB2_team\QLLK\LK\bin\Debug\LK.exe
-E:\QuanLyLinhKienDB2_team\QLLK\LK\bin\Debug\LK.pdb
-E:\QuanLyLinhKienDB2_team\QLLK\LK\bin\Debug\IBM.Data.DB2.dll
-E:\QuanLyLinhKienDB2_team\QLLK\LK\obj\Debug\LK.csprojResolveAssemblyReference.cache
-E:\QuanLyLinhKienDB2_team\QLLK\LK\obj\Debug\LK.frmChucVu.resources
-E:\QuanLyLinhKienDB2_team\QLLK\LK\obj\Debug\LK.frmLinhKien.resources
-E:\QuanLyLinhKienDB2_team\QLLK\LK\obj\Debug\LK.frmNhanVien.resources
-E:\QuanLyLinhKienDB2_team\QLLK\LK\obj\Debug\LK.Properties.Resources.resources
-E:\QuanLyLinhKienDB2_team\QLLK\LK\obj\Debug\LK.csproj.GenerateResource.Cache
-E:\QuanLyLinhKienDB2_team\QLLK\LK\obj\Debug\LK.csproj.CoreCompileInputs.cache
-E:\QuanLyLinhKienDB2_team\QLLK\LK\obj\Debug\LK.exe
-E:\QuanLyLinhKienDB2_team\QLLK\LK\obj\Debug\LK.pdb
+F:\DB2_BaoCao\QLLK\LK\obj\Debug\LK.frmKhachHang.resources
+F:\DB2_BaoCao\QLLK\LK\obj\Debug\LK.frmNhaCungCap.resources
+F:\DB2_BaoCao\QLLK\LK\obj\Debug\LK.PhieuBaoHanh.resources
+F:\DB2_BaoCao\QLLK\LK\obj\Debug\LK.frmTaiKhoan.resources
