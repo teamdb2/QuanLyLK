@@ -15,7 +15,7 @@ namespace LK.Data
 
         public DataTable DanhSach()
         {
-            DB2Command cmd = new DB2Command("SELECT * FROM QLLK.CHUCVU");
+            DB2Command cmd = new DB2Command("SELECT * FROM QLLK1.CHUCVU");
             data.Load(cmd);
             return data;
         }

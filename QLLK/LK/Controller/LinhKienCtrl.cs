@@ -55,11 +55,11 @@ namespace LK.Controller
             dGV.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
 
-        public void HienThiVaoComboBox(ComboBox cboTenLinhKien)
+        public void HienThiVaoComboBox(ComboBox cboLinhKien)
         {
-            cboTenLinhKien.DataSource = data.DanhSach();
-            cboTenLinhKien.DisplayMember = "TENLINHKIEN";
-            cboTenLinhKien.ValueMember = "MALINHKIEN";
+            cboLinhKien.DataSource = data.DanhSach();
+            cboLinhKien.DisplayMember = "TENLINHKIEN";
+            cboLinhKien.ValueMember = "MALINHKIEN";
         }
 
         public void Them(LinhKienInfo lk)

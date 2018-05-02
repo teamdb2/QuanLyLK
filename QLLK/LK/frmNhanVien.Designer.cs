@@ -30,20 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmNhanVien));
-            this.cbChucVu = new System.Windows.Forms.GroupBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.cboChucVu = new System.Windows.Forms.ComboBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtEmail = new System.Windows.Forms.TextBox();
-            this.chkGioiTinh = new System.Windows.Forms.CheckBox();
-            this.dtpNgayVaoLam = new System.Windows.Forms.DateTimePicker();
-            this.label6 = new System.Windows.Forms.Label();
-            this.dtpNgaySinh = new System.Windows.Forms.DateTimePicker();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtTenNV = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtMaNV = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.bindingNavigatorNV = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.btnXoa = new System.Windows.Forms.ToolStripButton();
@@ -63,155 +49,24 @@
             this.dataGridViewNV = new System.Windows.Forms.DataGridView();
             this.colMaNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colTenNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colNgaySinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colEmail = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colGioiTinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colChucVu = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colNgayVaoLam = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cbChucVu.SuspendLayout();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtMaNV = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtTenNV = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.cboChucVu = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.cbChucVu = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigatorNV)).BeginInit();
             this.bindingNavigatorNV.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewNV)).BeginInit();
+            this.cbChucVu.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // cbChucVu
-            // 
-            this.cbChucVu.Controls.Add(this.label5);
-            this.cbChucVu.Controls.Add(this.cboChucVu);
-            this.cbChucVu.Controls.Add(this.label4);
-            this.cbChucVu.Controls.Add(this.txtEmail);
-            this.cbChucVu.Controls.Add(this.chkGioiTinh);
-            this.cbChucVu.Controls.Add(this.dtpNgayVaoLam);
-            this.cbChucVu.Controls.Add(this.label6);
-            this.cbChucVu.Controls.Add(this.dtpNgaySinh);
-            this.cbChucVu.Controls.Add(this.label3);
-            this.cbChucVu.Controls.Add(this.txtTenNV);
-            this.cbChucVu.Controls.Add(this.label2);
-            this.cbChucVu.Controls.Add(this.txtMaNV);
-            this.cbChucVu.Controls.Add(this.label1);
-            this.cbChucVu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.cbChucVu.Location = new System.Drawing.Point(0, 0);
-            this.cbChucVu.Name = "cbChucVu";
-            this.cbChucVu.Size = new System.Drawing.Size(744, 141);
-            this.cbChucVu.TabIndex = 0;
-            this.cbChucVu.TabStop = false;
-            this.cbChucVu.Text = "Thông tin";
-            this.cbChucVu.Enter += new System.EventHandler(this.cbChucVu_Enter);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(256, 96);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(50, 13);
-            this.label5.TabIndex = 14;
-            this.label5.Text = "Chức vụ:";
-            // 
-            // cboChucVu
-            // 
-            this.cboChucVu.FormattingEnabled = true;
-            this.cboChucVu.Location = new System.Drawing.Point(317, 93);
-            this.cboChucVu.Name = "cboChucVu";
-            this.cboChucVu.Size = new System.Drawing.Size(170, 21);
-            this.cboChucVu.TabIndex = 13;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(253, 60);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 13);
-            this.label4.TabIndex = 12;
-            this.label4.Text = "Email:";
-            // 
-            // txtEmail
-            // 
-            this.txtEmail.Location = new System.Drawing.Point(317, 58);
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(170, 20);
-            this.txtEmail.TabIndex = 11;
-            // 
-            // chkGioiTinh
-            // 
-            this.chkGioiTinh.AutoSize = true;
-            this.chkGioiTinh.Location = new System.Drawing.Point(524, 24);
-            this.chkGioiTinh.Name = "chkGioiTinh";
-            this.chkGioiTinh.Size = new System.Drawing.Size(83, 17);
-            this.chkGioiTinh.TabIndex = 10;
-            this.chkGioiTinh.Text = "Giới tính Nữ";
-            this.chkGioiTinh.UseVisualStyleBackColor = true;
-            // 
-            // dtpNgayVaoLam
-            // 
-            this.dtpNgayVaoLam.CustomFormat = "dd/MM/yyyy";
-            this.dtpNgayVaoLam.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpNgayVaoLam.Location = new System.Drawing.Point(87, 94);
-            this.dtpNgayVaoLam.MaxDate = new System.DateTime(2050, 12, 31, 0, 0, 0, 0);
-            this.dtpNgayVaoLam.MinDate = new System.DateTime(1960, 1, 1, 0, 0, 0, 0);
-            this.dtpNgayVaoLam.Name = "dtpNgayVaoLam";
-            this.dtpNgayVaoLam.Size = new System.Drawing.Size(110, 20);
-            this.dtpNgayVaoLam.TabIndex = 9;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(6, 97);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(75, 13);
-            this.label6.TabIndex = 8;
-            this.label6.Text = "Ngày vào làm:";
-            // 
-            // dtpNgaySinh
-            // 
-            this.dtpNgaySinh.CustomFormat = "dd/MM/yyyy";
-            this.dtpNgaySinh.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpNgaySinh.Location = new System.Drawing.Point(86, 58);
-            this.dtpNgaySinh.MaxDate = new System.DateTime(2050, 12, 31, 0, 0, 0, 0);
-            this.dtpNgaySinh.MinDate = new System.DateTime(1960, 1, 1, 0, 0, 0, 0);
-            this.dtpNgaySinh.Name = "dtpNgaySinh";
-            this.dtpNgaySinh.Size = new System.Drawing.Size(110, 20);
-            this.dtpNgaySinh.TabIndex = 7;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(5, 61);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(57, 13);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Ngày sinh:";
-            // 
-            // txtTenNV
-            // 
-            this.txtTenNV.Location = new System.Drawing.Point(317, 22);
-            this.txtTenNV.Name = "txtTenNV";
-            this.txtTenNV.Size = new System.Drawing.Size(170, 20);
-            this.txtTenNV.TabIndex = 5;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(250, 25);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(57, 13);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Họ và tên:";
-            // 
-            // txtMaNV
-            // 
-            this.txtMaNV.Location = new System.Drawing.Point(87, 22);
-            this.txtMaNV.Name = "txtMaNV";
-            this.txtMaNV.Size = new System.Drawing.Size(110, 20);
-            this.txtMaNV.TabIndex = 3;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 25);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(75, 13);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Mã nhân viên:";
             // 
             // bindingNavigatorNV
             // 
@@ -241,8 +96,8 @@
             this.bindingNavigatorNV.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.bindingNavigatorNV.Name = "bindingNavigatorNV";
             this.bindingNavigatorNV.PositionItem = this.bindingNavigatorPositionItem;
-            this.bindingNavigatorNV.Size = new System.Drawing.Size(744, 25);
-            this.bindingNavigatorNV.TabIndex = 1;
+            this.bindingNavigatorNV.Size = new System.Drawing.Size(544, 25);
+            this.bindingNavigatorNV.TabIndex = 0;
             this.bindingNavigatorNV.Text = "bindingNavigator1";
             // 
             // bindingNavigatorCountItem
@@ -381,17 +236,14 @@
             this.dataGridViewNV.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colMaNV,
             this.colTenNV,
-            this.colNgaySinh,
             this.colEmail,
-            this.colGioiTinh,
-            this.colChucVu,
-            this.colNgayVaoLam});
+            this.colChucVu});
             this.dataGridViewNV.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridViewNV.Location = new System.Drawing.Point(0, 166);
             this.dataGridViewNV.Name = "dataGridViewNV";
             this.dataGridViewNV.ReadOnly = true;
             this.dataGridViewNV.RowHeadersVisible = false;
-            this.dataGridViewNV.Size = new System.Drawing.Size(744, 144);
+            this.dataGridViewNV.Size = new System.Drawing.Size(544, 144);
             this.dataGridViewNV.TabIndex = 0;
             // 
             // colMaNV
@@ -408,62 +260,145 @@
             this.colTenNV.Name = "colTenNV";
             this.colTenNV.ReadOnly = true;
             // 
-            // colNgaySinh
-            // 
-            this.colNgaySinh.DataPropertyName = "NGAYSINH";
-            this.colNgaySinh.HeaderText = "Ngày sinh";
-            this.colNgaySinh.Name = "colNgaySinh";
-            this.colNgaySinh.ReadOnly = true;
-            // 
             // colEmail
             // 
+            this.colEmail.DataPropertyName = "EMAIL";
             this.colEmail.HeaderText = "Email";
             this.colEmail.Name = "colEmail";
             this.colEmail.ReadOnly = true;
             // 
-            // colGioiTinh
-            // 
-            this.colGioiTinh.HeaderText = "Giới Tính";
-            this.colGioiTinh.Name = "colGioiTinh";
-            this.colGioiTinh.ReadOnly = true;
-            // 
             // colChucVu
             // 
+            this.colChucVu.DataPropertyName = "TENCV";
             this.colChucVu.HeaderText = "Chức Vụ";
             this.colChucVu.Name = "colChucVu";
             this.colChucVu.ReadOnly = true;
             // 
-            // colNgayVaoLam
+            // label1
             // 
-            this.colNgayVaoLam.HeaderText = "Ngày Vào Làm";
-            this.colNgayVaoLam.Name = "colNgayVaoLam";
-            this.colNgayVaoLam.ReadOnly = true;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(6, 25);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(75, 13);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Mã nhân viên:";
+            // 
+            // txtMaNV
+            // 
+            this.txtMaNV.Location = new System.Drawing.Point(87, 22);
+            this.txtMaNV.Name = "txtMaNV";
+            this.txtMaNV.Size = new System.Drawing.Size(110, 20);
+            this.txtMaNV.TabIndex = 1;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(250, 25);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(57, 13);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Họ và tên:";
+            // 
+            // txtTenNV
+            // 
+            this.txtTenNV.Location = new System.Drawing.Point(317, 22);
+            this.txtTenNV.Name = "txtTenNV";
+            this.txtTenNV.Size = new System.Drawing.Size(170, 20);
+            this.txtTenNV.TabIndex = 2;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(5, 61);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(0, 13);
+            this.label3.TabIndex = 6;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(6, 97);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(0, 13);
+            this.label6.TabIndex = 8;
+            // 
+            // txtEmail
+            // 
+            this.txtEmail.Location = new System.Drawing.Point(317, 58);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(170, 20);
+            this.txtEmail.TabIndex = 3;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(253, 60);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(35, 13);
+            this.label4.TabIndex = 12;
+            this.label4.Text = "Email:";
+            // 
+            // cboChucVu
+            // 
+            this.cboChucVu.FormattingEnabled = true;
+            this.cboChucVu.Location = new System.Drawing.Point(87, 57);
+            this.cboChucVu.Name = "cboChucVu";
+            this.cboChucVu.Size = new System.Drawing.Size(110, 21);
+            this.cboChucVu.TabIndex = 4;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(4, 60);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(50, 13);
+            this.label5.TabIndex = 14;
+            this.label5.Text = "Chức vụ:";
+            // 
+            // cbChucVu
+            // 
+            this.cbChucVu.Controls.Add(this.label5);
+            this.cbChucVu.Controls.Add(this.cboChucVu);
+            this.cbChucVu.Controls.Add(this.label4);
+            this.cbChucVu.Controls.Add(this.txtEmail);
+            this.cbChucVu.Controls.Add(this.label6);
+            this.cbChucVu.Controls.Add(this.label3);
+            this.cbChucVu.Controls.Add(this.txtTenNV);
+            this.cbChucVu.Controls.Add(this.label2);
+            this.cbChucVu.Controls.Add(this.txtMaNV);
+            this.cbChucVu.Controls.Add(this.label1);
+            this.cbChucVu.Dock = System.Windows.Forms.DockStyle.Top;
+            this.cbChucVu.Location = new System.Drawing.Point(0, 0);
+            this.cbChucVu.Name = "cbChucVu";
+            this.cbChucVu.Size = new System.Drawing.Size(544, 141);
+            this.cbChucVu.TabIndex = 0;
+            this.cbChucVu.TabStop = false;
+            this.cbChucVu.Text = "Thông tin";
+            this.cbChucVu.Enter += new System.EventHandler(this.cbChucVu_Enter);
             // 
             // frmNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(744, 310);
+            this.ClientSize = new System.Drawing.Size(544, 310);
             this.Controls.Add(this.dataGridViewNV);
             this.Controls.Add(this.bindingNavigatorNV);
             this.Controls.Add(this.cbChucVu);
             this.Name = "frmNhanVien";
             this.Text = "Nhân Viên";
             this.Load += new System.EventHandler(this.frmNhanVien_Load);
-            this.cbChucVu.ResumeLayout(false);
-            this.cbChucVu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigatorNV)).EndInit();
             this.bindingNavigatorNV.ResumeLayout(false);
             this.bindingNavigatorNV.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewNV)).EndInit();
+            this.cbChucVu.ResumeLayout(false);
+            this.cbChucVu.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.GroupBox cbChucVu;
         private System.Windows.Forms.BindingNavigator bindingNavigatorNV;
         private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
         private System.Windows.Forms.ToolStripButton btnXoa;
@@ -476,30 +411,25 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
         private System.Windows.Forms.DataGridView dataGridViewNV;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colMaNV;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colTenNV;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colNgaySinh;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colEmail;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox cboChucVu;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtEmail;
-        private System.Windows.Forms.CheckBox chkGioiTinh;
-        private System.Windows.Forms.DateTimePicker dtpNgayVaoLam;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.DateTimePicker dtpNgaySinh;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtTenNV;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtMaNV;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colGioiTinh;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colChucVu;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colNgayVaoLam;
         private System.Windows.Forms.ToolStripButton btnThem;
         private System.Windows.Forms.ToolStripButton btnSua;
         private System.Windows.Forms.ToolStripButton btnLuu;
         private System.Windows.Forms.ToolStripButton btnlammoi;
         private System.Windows.Forms.ToolStripButton btnThoat;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtMaNV;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtTenNV;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label6;
+        public System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ComboBox cboChucVu;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.GroupBox cbChucVu;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colMaNV;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colTenNV;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colEmail;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colChucVu;
     }
 }

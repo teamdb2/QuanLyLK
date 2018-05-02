@@ -98,5 +98,10 @@ namespace LK
             cvCtrl.HienThiVaoDGV(dataGridViewCV, bindingNavigatorCV, txtMaCV, txtTenCV);
             BatTat(true);
         }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

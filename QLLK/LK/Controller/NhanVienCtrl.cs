@@ -20,10 +20,7 @@ namespace LK.Controller
                                   TextBox txtMaNV,
                                   TextBox txtTenNV,
                                   TextBox txtEmail,
-                                  CheckBox chkGioiTinh,
-                                  DateTimePicker dtpNgaySinh,
-                                  ComboBox cboChucVu,
-                                  DateTimePicker dtpNgayVaoLam
+                                  ComboBox cboChucVu
                                   )
         {
             BindingSource bS = new BindingSource();
@@ -38,29 +35,19 @@ namespace LK.Controller
             txtEmail.DataBindings.Clear();
             txtEmail.DataBindings.Add("Text", bS, "EMAIL", false, DataSourceUpdateMode.Never);
 
-            chkGioiTinh.DataBindings.Clear();
-            Binding gt = new Binding("Checked", bS, "GIOITINH", false, DataSourceUpdateMode.Never);
-            gt.Format += (s, e) =>
-            {
-                e.Value = (string)e.Value == "F";
-            };
-            chkGioiTinh.DataBindings.Add(gt);
-
-            dtpNgaySinh.DataBindings.Clear();
-            dtpNgaySinh.DataBindings.Add("Value", bS, "NGAYSINH", false, DataSourceUpdateMode.Never);
-
             cboChucVu.DataBindings.Clear();
             cboChucVu.DataBindings.Add("SelectedValue", bS, "MACV", false, DataSourceUpdateMode.Never);
 
 
-
-            dtpNgayVaoLam.DataBindings.Clear();
-            dtpNgayVaoLam.DataBindings.Add("Value", bS, "NGAYVAOLAM", false, DataSourceUpdateMode.Never);
-
-           
-
             bN.BindingSource = bS;
             dGV.DataSource = bS;
+            dGV.Columns[0].HeaderText = "Mã nhân viên";
+            dGV.Columns[1].HeaderText = "Tên nhân viên";
+            dGV.Columns[2].HeaderText = "Email";
+            dGV.Columns[3].HeaderText = "Chức vụ";
+
+
+            dGV.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
         public void HienThiVaoComboBox(ComboBox cboNhanVien)
         {

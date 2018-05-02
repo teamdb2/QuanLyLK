@@ -15,26 +15,26 @@ namespace LK.Data
 
         public DataTable DanhSach()
         {
-            DB2Command cmd = new DB2Command("SELECT N.*, CV.TENCV FROM LK.NHANVIEN N, LK.CHUCVU CV WHERE N.MACV = CV.MACV");
+            DB2Command cmd = new DB2Command("SELECT N.*, CV.TENCV FROM QLLK1.NHANVIEN N, QLLK1.CHUCVU CV WHERE N.MACV = CV.MACV");
             data.Load(cmd);
             return data;
         }
 
         public void Them(NhanVienInfo nv)
         {
-            DB2Command cmd = new DB2Command("INSERT INTO LK.NHANVIEN(MANV, TENNHANVIEN, EMAIL, GIOITINH, NGAYSINH, MACV, NGAYVAOLAM) VALUES('" + nv.MaNV + "', '" + nv.TenNV + "', '" + nv.Email + "', '" + nv.GioiTinh + "', '" + nv.NgaySinh + "', '" + nv.NgayVaoLam + "', '" + nv.Chucvu.MaCV + "')");
+            DB2Command cmd = new DB2Command("INSERT INTO QLLK1.NHANVIEN(MANV, TENNHANVIEN, EMAIL, MACV ) VALUES('" + nv.MaNV + "', '" + nv.TenNV + "', '" + nv.Email + "', '" + nv.Chucvu.MaCV  + "')");
             data.Load(cmd);
         }
 
         public void Sua(NhanVienInfo nv, string maNV)
         {
-            DB2Command cmd = new DB2Command("UPDATE LK.NHANVIEN SET MANV = '" + nv.MaNV + "', TENNHANVIEN = '" + nv.TenNV + "',EMAIL='"+nv.Email+ "', GIOITINH = '" + nv.GioiTinh + "', NGAYSINH = '" + nv.NgaySinh + "',, MACV = '" + nv.Chucvu.MaCV + "', NGAYVAOLAM = '" + nv.NgayVaoLam + "' WHERE MANV = '" + maNV + "'");
+            DB2Command cmd = new DB2Command("UPDATE QLLK1.NHANVIEN SET MANV = '" + nv.MaNV + "', TENNHANVIEN = '" + nv.TenNV + "',EMAIL='" + nv.Email + ", MACV = '" + nv.Chucvu.MaCV +  "' WHERE MANV = '" + maNV + "'");
             data.Load(cmd);
         }
 
         public void Xoa(string maNV)
         {
-            DB2Command cmd = new DB2Command("DELETE FROM LK.NHANVIEN WHERE MANV = '" + maNV + "'");
+            DB2Command cmd = new DB2Command("DELETE FROM QLLK1.NHANVIEN WHERE MANV = '" + maNV + "'");
             data.Load(cmd);
         }
     }

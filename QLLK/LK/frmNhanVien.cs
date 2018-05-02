@@ -30,7 +30,7 @@ namespace LK
             dataGridViewNV.AutoGenerateColumns = false;
 
             // Lấy dữ liệu vào DataGirdView
-            nvCtrl.HienThiVaoDGV(dataGridViewNV, bindingNavigatorNV, txtMaNV, txtTenNV,txtEmail, chkGioiTinh, dtpNgaySinh, cboChucVu, dtpNgayVaoLam);
+            nvCtrl.HienThiVaoDGV(dataGridViewNV, bindingNavigatorNV, txtMaNV, txtTenNV,txtEmail, cboChucVu);
             cvCtrl.HienThiVaoComboBox(cboChucVu);
             BatTat(true);
 
@@ -39,14 +39,10 @@ namespace LK
         {
             txtMaNV.Enabled = !giaTri;
             txtTenNV.Enabled = !giaTri;
-            txtEmail.Enabled = !giaTri;
-            chkGioiTinh.Enabled = !giaTri;
-            dtpNgaySinh.Enabled = !giaTri;   
+            txtEmail.Enabled = !giaTri;    
             cboChucVu.Enabled = !giaTri;
-            dtpNgayVaoLam.Enabled = !giaTri;
-            btnLuu.Enabled = !giaTri;
             btnThem.Enabled = giaTri;
-           
+            btnLuu.Enabled = !giaTri;
             btnXoa.Enabled = giaTri;
         }
         private void groupBox1_Enter(object sender, EventArgs e)
@@ -54,24 +50,9 @@ namespace LK
 
         }
 
-              private void btnlammoi_Click(object sender, EventArgs e)
+        private void btnlammoi_Click(object sender, EventArgs e)
         {
            
-        }
-
-        private void dtpNgayVaoLam_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dtpNgaySinh_ValueChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void cbChucVu_Enter(object sender, EventArgs e)
@@ -86,9 +67,6 @@ namespace LK
             txtMaNV.Text = "";
             txtTenNV.Text = "";
             txtEmail.Text = "";
-            chkGioiTinh.Checked = false;
-            dtpNgaySinh.Value = DateTime.Now;
-            dtpNgayVaoLam.Value = DateTime.Now;
             cboChucVu.Text = "";
         }
 
@@ -124,14 +102,9 @@ namespace LK
                 n.MaNV = txtMaNV.Text;
                 n.TenNV = txtTenNV.Text;
                 n.Email = txtEmail.Text;
-                if (chkGioiTinh.Checked == true)
-                    n.GioiTinh = "F";
-                else
-                    n.GioiTinh = "M";
 
-                n.NgaySinh = dtpNgaySinh.Value.Date.ToString("dd/MM/yyyy");
-                n.NgayVaoLam=dtpNgayVaoLam.Value.Date.ToString("dd/MM/yyyy");
                 n.Chucvu.MaCV = cboChucVu.SelectedValue.ToString();
+              
 
                 if (isThem)
                     nvCtrl.Them(n);
