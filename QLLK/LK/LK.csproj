@@ -48,19 +48,39 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controller\ChucVuCtrl.cs" />
+    <Compile Include="Controller\KhachHangCtrl.cs" />
     <Compile Include="Controller\LinhKienCtrl.cs" />
+    <Compile Include="Controller\NhaCungCapCtrl.cs" />
     <Compile Include="Controller\NhanVienCtrl.cs" />
+    <Compile Include="Controller\PhieuBaoHanhCtrl.cs" />
+    <Compile Include="Controller\TaiKhoanCtrl.cs" />
     <Compile Include="Data\ChucVuData.cs" />
     <Compile Include="Data\Connect.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Data\KhachHangData.cs" />
     <Compile Include="Data\LinhKienData.cs" />
+    <Compile Include="Data\NhaCungCapData.cs" />
     <Compile Include="Data\NhanVienData.cs" />
+    <Compile Include="Data\PhieuBaoHanhData.cs" />
+    <Compile Include="Data\TaiKhoanData.cs" />
     <Compile Include="frmChucVu.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmChucVu.Designer.cs">
       <DependentUpon>frmChucVu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDangNhap.Designer.cs">
+      <DependentUpon>frmDangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKhachHang.Designer.cs">
+      <DependentUpon>frmKhachHang.cs</DependentUpon>
     </Compile>
     <Compile Include="frmLinhKien.cs">
       <SubType>Form</SubType>
@@ -68,25 +88,62 @@
     <Compile Include="frmLinhKien.Designer.cs">
       <DependentUpon>frmLinhKien.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmNhaCungCap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNhaCungCap.Designer.cs">
+      <DependentUpon>frmNhaCungCap.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmNhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmNhanVien.Designer.cs">
       <DependentUpon>frmNhanVien.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmTaiKhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTaiKhoan.Designer.cs">
+      <DependentUpon>frmTaiKhoan.cs</DependentUpon>
+    </Compile>
     <Compile Include="Info\ChucVuInfo.cs" />
+    <Compile Include="Info\KhachHangInfo.cs" />
     <Compile Include="Info\LinhKienInfo.cs" />
+    <Compile Include="Info\NhaCungCapInfo.cs" />
     <Compile Include="Info\NhanVienInfo.cs" />
+    <Compile Include="Info\PhieuBaoHanhInfo.cs" />
+    <Compile Include="Info\TaiKhoanInfo.cs" />
+    <Compile Include="PhieuBaoHanh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PhieuBaoHanh.Designer.cs">
+      <DependentUpon>PhieuBaoHanh.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmChucVu.resx">
       <DependentUpon>frmChucVu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmDangNhap.resx">
+      <DependentUpon>frmDangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKhachHang.resx">
+      <DependentUpon>frmKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmLinhKien.resx">
       <DependentUpon>frmLinhKien.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmNhaCungCap.resx">
+      <DependentUpon>frmNhaCungCap.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmNhanVien.resx">
       <DependentUpon>frmNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTaiKhoan.resx">
+      <DependentUpon>frmTaiKhoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PhieuBaoHanh.resx">
+      <DependentUpon>PhieuBaoHanh.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

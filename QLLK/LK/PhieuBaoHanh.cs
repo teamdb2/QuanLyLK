@@ -95,11 +95,11 @@ namespace LK
 
                 pbh.TenKH = txtTenKhachHang.Text;
                 pbh.TgBaoHanh = Convert.ToInt32(txtThoiGianBH.Text);
-                pbh.NgayMua = dtNgayMua.Value.ToShortDateString();
-                pbh.NgayHetHan = dtNgayHetHan.Value.ToShortDateString();
+               // pbh.NgayMua = dtNgayMua.Value.ToShortDateString();
+               // pbh.NgayHetHan = dtNgayHetHan.Value.ToShortDateString();
                 //pbh.NgayMua = dtNgayMua.sel.Value.ToString("dd-MMM-yyyy");
-                //pbh.NgayMua = dtNgayMua.Value.Date.ToString("dd/MMM/yyyy");
-                //pbh.NgayHetHan = dtNgayHetHan.Value.Date.ToString("dd/MM/yyyy");
+                pbh.NgayMua = dtNgayMua.Value.Date.ToString("MM/dd/yyyy");
+                pbh.NgayHetHan = dtNgayHetHan.Value.Date.ToString("MM/dd/yyyy");
                
 
                 if (isThem)

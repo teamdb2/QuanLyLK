@@ -34,8 +34,6 @@ namespace LK.Controller
             dGV.Columns[1].HeaderText = "Tên Nhà Cung Cấp";
             dGV.Columns[2].HeaderText = "Địa Chỉ Nhà Cung Cấp";
             dGV.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-
-
         }
 
         public void HienThiVaoComboBox(ComboBox cboNhaCungCap)

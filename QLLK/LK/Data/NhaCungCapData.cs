@@ -15,26 +15,26 @@ namespace LK.Data
 
         public DataTable DanhSach()
         {
-            DB2Command cmd = new DB2Command("SELECT * FROM QLLK1.NHACUNGCAP");
+            DB2Command cmd = new DB2Command("SELECT * FROM QLLK5.NHACUNGCAP");
             data.Load(cmd);
             return data;
         }
 
         public void Them(NhaCungCapInfo ncc)
         {
-            DB2Command cmd = new DB2Command("INSERT INTO QLLK1.NHACUNGCAP(MANCC, TENNCC, DIACHI) VALUES('" + ncc.MaNCC + "', '" + ncc.TenNCC + "','"+ncc.DiaChiNCC+"')");
+            DB2Command cmd = new DB2Command("INSERT INTO QLLK5.NHACUNGCAP(MANCC, TENNCC, DIACHI) VALUES('" + ncc.MaNCC + "', '" + ncc.TenNCC + "','"+ncc.DiaChiNCC+"')");
             data.Load(cmd);
         }
 
         public void Sua(NhaCungCapInfo ncc, string maNCC)
         {
-            DB2Command cmd = new DB2Command("UPDATE QLLK1.NHACUNGCAP SET MANCC = '" + ncc.MaNCC + "', TENNCC = '" + ncc.TenNCC + "',DIACHI='" + ncc.DiaChiNCC + "' WHERE MANCC = '" + maNCC + "'");
+            DB2Command cmd = new DB2Command("UPDATE QLLK5.NHACUNGCAP SET MANCC = '" + ncc.MaNCC + "', TENNCC = '" + ncc.TenNCC + "',DIACHI='" + ncc.DiaChiNCC + "' WHERE MANCC = '" + maNCC + "'");
             data.Load(cmd);
         }
 
         public void Xoa(string maNCC)
         {
-            DB2Command cmd = new DB2Command("DELETE FROM QLLK1.NHACUNGCAP WHERE MANCC = '" + maNCC + "'");
+            DB2Command cmd = new DB2Command("DELETE FROM QLLK5.NHACUNGCAP WHERE MANCC = '" + maNCC + "'");
             data.Load(cmd);
         }
     }

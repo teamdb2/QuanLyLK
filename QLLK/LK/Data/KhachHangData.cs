@@ -15,26 +15,26 @@ namespace LK.Data
 
         public DataTable DanhSach()
         {
-            DB2Command cmd = new DB2Command("SELECT * FROM QLLK1.KHACHHANG");
+            DB2Command cmd = new DB2Command("SELECT * FROM QLLK5.KHACHHANG");
             data.Load(cmd);
             return data;
         }
 
         public void Them(KhachHangInfo kh)
         {
-            DB2Command cmd = new DB2Command("INSERT INTO QLLK1.KHACHHANG(MAKH, TENKHACHHNAG, GIOITINH, DIACHI, SDT) VALUES('" + kh.MaKH + "', '" + kh.TenKH + "','" + kh.GioiTinh + "','" + kh.DiaChi + "','"+kh.Sdt+"')");
+            DB2Command cmd = new DB2Command("INSERT INTO QLLK5.KHACHHANG(MAKH, TENKHACHHNAG, GIOITINH, DIACHI, SDT) VALUES('" + kh.MaKH + "', '" + kh.TenKH + "','" + kh.GioiTinh + "','" + kh.DiaChi + "','"+kh.Sdt+"')");
             data.Load(cmd);
         }
 
         public void Sua(KhachHangInfo kh, string maKH)
         {
-            DB2Command cmd = new DB2Command("UPDATE QLLK1.KHACHHANG SET MAKH = '" + kh.MaKH + "', TENKHACHHNAG = '" + kh.TenKH + "', GIOITINH='"+kh.GioiTinh+"', DIACHI='"+kh.DiaChi+"',SDT='"+kh.Sdt+"' WHERE MAKH = '" + maKH + "'");
+            DB2Command cmd = new DB2Command("UPDATE QLLK5.KHACHHANG SET MAKH = '" + kh.MaKH + "', TENKHACHHNAG = '" + kh.TenKH + "', GIOITINH='"+kh.GioiTinh+"', DIACHI='"+kh.DiaChi+"',SDT='"+kh.Sdt+"' WHERE MAKH = '" + maKH + "'");
             data.Load(cmd);
         }
 
         public void Xoa(string maKH)
         {
-            DB2Command cmd = new DB2Command("DELETE FROM QLLK1.KHACHHANG WHERE MAKH = '" + maKH + "'");
+            DB2Command cmd = new DB2Command("DELETE FROM QLLK5.KHACHHANG WHERE MAKH = '" + maKH + "'");
             data.Load(cmd);
         }
     }

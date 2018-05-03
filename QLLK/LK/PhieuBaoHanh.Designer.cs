@@ -45,6 +45,12 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridViewPBH = new System.Windows.Forms.DataGridView();
+            this.colmaphieu = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.coltenlinhkien = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.coltenkh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colthgbaohanh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colngaymua = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colngayhethan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bindingNavigatorPBH = new System.Windows.Forms.BindingNavigator(this.components);
             this.btnThem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
@@ -62,12 +68,6 @@
             this.btnTaiLai = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
-            this.colmaphieu = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.coltenlinhkien = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.coltenkh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colthgbaohanh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colngaymua = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colngayhethan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -117,7 +117,7 @@
             // 
             // dtNgayHetHan
             // 
-            this.dtNgayHetHan.CustomFormat = "dd/MM/yyyy";
+            this.dtNgayHetHan.CustomFormat = "MM/dd/yyyy";
             this.dtNgayHetHan.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtNgayHetHan.Location = new System.Drawing.Point(506, 58);
             this.dtNgayHetHan.Name = "dtNgayHetHan";
@@ -151,7 +151,7 @@
             // 
             // dtNgayMua
             // 
-            this.dtNgayMua.CustomFormat = "dd/MM/yyyy";
+            this.dtNgayMua.CustomFormat = "MM/dd/yyyy";
             this.dtNgayMua.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtNgayMua.Location = new System.Drawing.Point(506, 17);
             this.dtNgayMua.Name = "dtNgayMua";
@@ -235,6 +235,48 @@
             this.dataGridViewPBH.ReadOnly = true;
             this.dataGridViewPBH.Size = new System.Drawing.Size(800, 249);
             this.dataGridViewPBH.TabIndex = 1;
+            // 
+            // colmaphieu
+            // 
+            this.colmaphieu.DataPropertyName = "MAPBH";
+            this.colmaphieu.HeaderText = "Mã phiếu bảo hành";
+            this.colmaphieu.Name = "colmaphieu";
+            this.colmaphieu.ReadOnly = true;
+            // 
+            // coltenlinhkien
+            // 
+            this.coltenlinhkien.DataPropertyName = "MALINHKIEN";
+            this.coltenlinhkien.HeaderText = "Tên linh kiện";
+            this.coltenlinhkien.Name = "coltenlinhkien";
+            this.coltenlinhkien.ReadOnly = true;
+            // 
+            // coltenkh
+            // 
+            this.coltenkh.DataPropertyName = "TENKH";
+            this.coltenkh.HeaderText = "Tên khách hàng";
+            this.coltenkh.Name = "coltenkh";
+            this.coltenkh.ReadOnly = true;
+            // 
+            // colthgbaohanh
+            // 
+            this.colthgbaohanh.DataPropertyName = "THOIGIANBAOHANH";
+            this.colthgbaohanh.HeaderText = "Thời gian bảo hành";
+            this.colthgbaohanh.Name = "colthgbaohanh";
+            this.colthgbaohanh.ReadOnly = true;
+            // 
+            // colngaymua
+            // 
+            this.colngaymua.DataPropertyName = "NGAYMUA";
+            this.colngaymua.HeaderText = "Ngày mua";
+            this.colngaymua.Name = "colngaymua";
+            this.colngaymua.ReadOnly = true;
+            // 
+            // colngayhethan
+            // 
+            this.colngayhethan.DataPropertyName = "NGAYHETHAN";
+            this.colngayhethan.HeaderText = "Ngày hết hạn";
+            this.colngayhethan.Name = "colngayhethan";
+            this.colngayhethan.ReadOnly = true;
             // 
             // bindingNavigatorPBH
             // 
@@ -401,48 +443,6 @@
             this.toolStripButton4.Size = new System.Drawing.Size(23, 22);
             this.toolStripButton4.Text = "btnThoat";
             this.toolStripButton4.Click += new System.EventHandler(this.toolStripButton4_Click);
-            // 
-            // colmaphieu
-            // 
-            this.colmaphieu.DataPropertyName = "MAPBH";
-            this.colmaphieu.HeaderText = "Mã phiếu bảo hành";
-            this.colmaphieu.Name = "colmaphieu";
-            this.colmaphieu.ReadOnly = true;
-            // 
-            // coltenlinhkien
-            // 
-            this.coltenlinhkien.DataPropertyName = "MALINHKIEN";
-            this.coltenlinhkien.HeaderText = "Tên linh kiện";
-            this.coltenlinhkien.Name = "coltenlinhkien";
-            this.coltenlinhkien.ReadOnly = true;
-            // 
-            // coltenkh
-            // 
-            this.coltenkh.DataPropertyName = "TENKH";
-            this.coltenkh.HeaderText = "Tên khách hàng";
-            this.coltenkh.Name = "coltenkh";
-            this.coltenkh.ReadOnly = true;
-            // 
-            // colthgbaohanh
-            // 
-            this.colthgbaohanh.DataPropertyName = "THOIGIANBAOHANH";
-            this.colthgbaohanh.HeaderText = "Thời gian bảo hành";
-            this.colthgbaohanh.Name = "colthgbaohanh";
-            this.colthgbaohanh.ReadOnly = true;
-            // 
-            // colngaymua
-            // 
-            this.colngaymua.DataPropertyName = "NGAYMUA";
-            this.colngaymua.HeaderText = "Ngày mua";
-            this.colngaymua.Name = "colngaymua";
-            this.colngaymua.ReadOnly = true;
-            // 
-            // colngayhethan
-            // 
-            this.colngayhethan.DataPropertyName = "NGAYHETHAN";
-            this.colngayhethan.HeaderText = "Ngày hết hạn";
-            this.colngayhethan.Name = "colngayhethan";
-            this.colngayhethan.ReadOnly = true;
             // 
             // PhieuBaoHanh
             // 

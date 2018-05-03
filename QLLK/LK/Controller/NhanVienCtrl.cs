@@ -7,21 +7,20 @@ using System.Windows.Forms;
 using LK.Data;
 using LK.Info;
 
-
 namespace LK.Controller
 {
-
     class NhanVienCtrl
     {
         NhanVienData data = new NhanVienData();
 
-        public void HienThiVaoDGV(DataGridView dGV,
-                                  BindingNavigator bN,
-                                  TextBox txtMaNV,
+        public void HienThiVaoDGV(DataGridView dGV, 
+                                  BindingNavigator bN, 
+                                  TextBox txtMaNV, 
                                   TextBox txtTenNV,
-                                  TextBox txtEmail,
-                                  ComboBox cboChucVu
-                                  )
+                                  TextBox txtEmai,
+                                  CheckBox chkGioiTinh,
+                                  ComboBox cboChucVu, 
+                                  TextBox txtDiaChi)
         {
             BindingSource bS = new BindingSource();
             bS.DataSource = data.DanhSach();
@@ -32,29 +31,37 @@ namespace LK.Controller
             txtTenNV.DataBindings.Clear();
             txtTenNV.DataBindings.Add("Text", bS, "TENNHANVIEN", false, DataSourceUpdateMode.Never);
 
-            txtEmail.DataBindings.Clear();
-            txtEmail.DataBindings.Add("Text", bS, "EMAIL", false, DataSourceUpdateMode.Never);
+            txtEmai.DataBindings.Clear();
+            txtEmai.DataBindings.Add("Text", bS, "EMAIL", false, DataSourceUpdateMode.Never);
+
+           /* chkGioiTinh.DataBindings.Clear();
+            Binding gt = new Binding("Checked", bS, "GIOITINH", false, DataSourceUpdateMode.Never);
+            gt.Format += (s, e) =>
+            {
+                e.Value = (string)e.Value == "F";
+            };
+            chkGioiTinh.DataBindings.Add(gt);*/
+
 
             cboChucVu.DataBindings.Clear();
             cboChucVu.DataBindings.Add("SelectedValue", bS, "MACV", false, DataSourceUpdateMode.Never);
 
+            txtDiaChi.DataBindings.Clear();
+            txtDiaChi.DataBindings.Add("Text", bS, "DIACHI", false, DataSourceUpdateMode.Never);
 
+
+            
             bN.BindingSource = bS;
             dGV.DataSource = bS;
-            dGV.Columns[0].HeaderText = "Mã nhân viên";
-            dGV.Columns[1].HeaderText = "Tên nhân viên";
-            dGV.Columns[2].HeaderText = "Email";
-            dGV.Columns[3].HeaderText = "Chức vụ";
-
-
-            dGV.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
+
         public void HienThiVaoComboBox(ComboBox cboNhanVien)
         {
             cboNhanVien.DataSource = data.DanhSach();
-            cboNhanVien.DisplayMember = "TENNHANVIEN";
+            cboNhanVien.DisplayMember = "TENNV";
             cboNhanVien.ValueMember = "MANV";
         }
+
         public void Them(NhanVienInfo nv)
         {
             data.Them(nv);
@@ -69,7 +76,5 @@ namespace LK.Controller
         {
             data.Xoa(maNV);
         }
-
-
     }
 }

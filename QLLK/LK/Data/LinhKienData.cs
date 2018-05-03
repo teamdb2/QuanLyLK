@@ -15,14 +15,14 @@ namespace LK.Data
 
         public DataTable DanhSach()
         {
-            DB2Command cmd = new DB2Command("SELECT * FROM QLLK1.LINHKIEN");
+            DB2Command cmd = new DB2Command("SELECT * FROM QLLK5.LINHKIEN");
             data.Load(cmd);
             return data;
         }
 
         public void Them(LinhKienInfo lk)
         {
-            string query = string.Format(@"INSERT INTO QLLK1.LINHKIEN(MALINHKIEN,TENLINHKIEN,NHANHIEU,THONGSOKYTHUAT,GIABAN,GIANHAP) 
+            string query = string.Format(@"INSERT INTO QLLK5.LINHKIEN(MALINHKIEN,TENLINHKIEN,NHANHIEU,THONGSOKYTHUAT,GIABAN,GIANHAP) 
                                             VALUES('{0}','{1}','{2}','{3}',{4},{5})", lk.MaLK,lk.TenLK,lk.NhanHieu,lk.ThongSoKyThuat,lk.GiaBan,lk.GiaNhap);
             DB2Command cmd = new DB2Command(query);
             data.Load(cmd);
@@ -30,7 +30,7 @@ namespace LK.Data
 
         public void Sua(LinhKienInfo lk, string maLK)
         {
-            string query = string.Format(@"UPDATE QLLK1.LINHKIEN SET TENLINHKIEN='{1}',NHANHIEU='{2}',THONGSOKYTHUAT='{3}',GIABAN={4},GIANHAP={5} WHERE MALINHKIEN='{0}'", lk.MaLK, lk.TenLK, lk.NhanHieu, lk.ThongSoKyThuat, lk.GiaNhap, lk.GiaNhap);
+            string query = string.Format(@"UPDATE QLLK5.LINHKIEN SET TENLINHKIEN='{1}',NHANHIEU='{2}',THONGSOKYTHUAT='{3}',GIABAN={4},GIANHAP={5} WHERE MALINHKIEN='{0}'", lk.MaLK, lk.TenLK, lk.NhanHieu, lk.ThongSoKyThuat, lk.GiaNhap, lk.GiaNhap);
                                            
             DB2Command cmd = new DB2Command(query);
 
@@ -39,7 +39,7 @@ namespace LK.Data
 
         public void Xoa(string maLK)
         {
-            string query=string.Format(@"DELETE FROM QLLK1.LINHKIEN WHERE MALINHKIEN='{0}'", maLK);
+            string query=string.Format(@"DELETE FROM QLLK5.LINHKIEN WHERE MALINHKIEN='{0}'", maLK);
             DB2Command cmd = new DB2Command(query);
             data.Load(cmd);
         }
